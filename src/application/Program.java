@@ -2,6 +2,8 @@ package application;
 
 import java.sql.Date;
 
+import model.dao.SellerDao;
+import model.dao.impl.DaoFactory;
 import model.entities.Department;
 import model.entities.Seller;
 
@@ -20,7 +22,7 @@ public class Program {
 		System.out.println(seller);
 		
 		
-		
+		SellerDao sellerDao =  DaoFactory.createSellerDao();
 		
 		
 		
